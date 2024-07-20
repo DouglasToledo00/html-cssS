@@ -1,0 +1,38 @@
+@charset "UTF8";
+body{
+ background-image:linear-gradient(to right,#023535,#0FC2C0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align:left;
+}
+main{
+    background-color:#008F8C ;
+    box-shadow: 10px 10px 15px  #000000;
+    border-radius: 10px;
+    width: 700px;
+    padding:10px;
+    margin: auto; 
+    
+
+    
+}
+h1{
+    color:#FFCB9A ;
+    text-shadow: 2px 2px 3px#00000093;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+h2{
+    color:#f1c095 ;
+    text-shadow:2px 2px 3px#000000 ;
+    text-align: right;
+    font-family: serif;
+    font-size: 30px;
+}
+p{
+    font-family:serif;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 50px;
+}
