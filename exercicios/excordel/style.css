@@ -70,6 +70,7 @@ section.imagem{
     background-image: url('imagem/img1.jpg');
     background-position: right center;
     background-size: cover;
+    background-position:left center;
     
 }
 
