@@ -13,14 +13,29 @@
             width:400px ;
             height:400px ;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(211, 211, 211);
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(101, 101, 101);
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(101, 101, 101);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -32,6 +47,7 @@
     <!--
      ANATOMIA PARA TABELAS GRANDES
          TABLE
+            CAPTION
              THEAD
                  TR, TD, TH
              TBODY
@@ -40,29 +56,39 @@
                  TR, TD, TH
        -->
           <table>
+
+            <caption>População das Unidades Federativas</caption>
+
             <thead>
+
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
+
             </thead>
+
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td class="num">44.411.238	</td>
+                    <td class="num" style="width: 50px;">44.411.238	</td>
                 </tr>
+
                 <tr>
                     <td>Minas Gerais</td>
                     <td class="num">19.597.330	</td>
                 </tr>
+
                 <tr>
                     <td>Rio de Janeiro</td>
                     <td class="num">16.054.524</td>
                 </tr>
+
                 <tr>
                     <td>Bhaia</td>
                     <td class="num">14.141.626	</td>
                 </tr>
+
                 <tr>
                     <td>Paraná</td>
                     <td class="num">11.444.380</td>
@@ -91,79 +117,108 @@
                     <td>Goiás</td>
                     <td class="num">7.056.495</td>
                 </tr>
+
                 <tr>
                     <td>Maranhão</td>
                     <td class="num">6.775.805</td>
                 </tr>
+
                 <tr>
                     <td>Paraíba</td>
                     <td class="num">3.974.687</td>
                 </tr>
+
                 <tr>
                     <td>Amazonas</td>
                     <td class="num">3.941.613</td>
                 </tr>
+
                 <tr>
                     <td>Espírito Santo</td>
                     <td class="num">3.833.712</td>
                 </tr>
+
                 <tr>
                     <td>Mato Grosso</td>
                     <td class="num">3.658.649</td>
                 </tr>
+
                 <tr>
                     <td>Rio Grande do Norte</td>
                     <td class="num">3.302.729</td>
                 </tr>
+
                 <tr>
                     <td>Piauí</td>
                     <td class="num">3.271.199</td>
                 </tr>
+
                 <tr>
                     <td>Alagoas</td>
                     <td class="num">3.127.683</td>
                 </tr>
+
                 <tr>
                     <td>Distrito Federal</td>
                     <td class="num">2.817.381</td>
                 </tr>
+
                 <tr>
                     <td>Mato Grosso do Sul</td>
                     <td class="num">2.757.013</td>
                 </tr>
+
                 <tr>
                     <td>Sergipe</td>
                     <td class="num">2.209.558</td>
                 </tr>
+
                 <tr>
 
                     <td>Rondônia</td>
                     <td class="num">1.581.196</td>
                 </tr>
+
                 <tr>
                     <td>Tocantis</td>
                     <td class="num">1.511.460</td>
                 </tr>
+
                 <tr>
                     <td>Acre</td>
                     <td class="num">830.018</td>
                 </tr>
+
                 <tr>
                     <td>Amapá</td>
                     <td class="num">733.759</td>
                 </tr>
+
                 <tr>
                     <td>Roraima</td>
                     <td class="num">636.707</td>
                 </tr>
+
             </tbody>
+
             <tfoot>
+
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>203.062.512</strong></td>
                 </tr>
 
             </tfoot>
-          </table>                        
+
+          </table>  
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed, rem itaque debitis perferendis, tenetur totam nam quo id recusandae magni, eligendi perspiciatis quaerat incidunt magnam alias repellendus et eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, unde sint. Ullam numquam aliquam laboriosam fuga quis, saepe atque. Provident a libero ratione voluptate quibusdam placeat expedita quasi atque illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos voluptate eius ducimus, quae voluptatem pariatur sapiente quaerat sint nemo, mollitia, velit consequatur laborum odit dolorem. Rerum sapiente sint illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reprehenderit maxime aperiam quisquam non animi eligendi eos, eaque est molestiae laborum blanditiis tempore veniam voluptatum magnam veritatis! Optio, soluta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea distinctio possimus reiciendis facilis. Neque saepe rerum placeat, veritatis distinctio quia, nihil maxime quibusdam nostrum earum voluptatibus veniam, voluptates ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel veniam quos incidunt at aspernatur corporis. Porro cupiditate soluta ipsum quam reprehenderit odit voluptates quibusdam maxime, facilis obcaecati. Architecto, at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, eaque, natus, dicta deleniti ipsum quis cumque neque necessitatibus consectetur aspernatur officiis vitae odit quasi numquam in perferendis quo assumenda tenetur.</p>  
+          
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed, rem itaque debitis perferendis, tenetur totam nam quo id recusandae magni, eligendi perspiciatis quaerat incidunt magnam alias repellendus et eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, unde sint. Ullam numquam aliquam laboriosam fuga quis, saepe atque. Provident a libero ratione voluptate quibusdam placeat expedita quasi atque illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos voluptate eius ducimus, quae voluptatem pariatur sapiente quaerat sint nemo, mollitia, velit consequatur laborum odit dolorem. Rerum sapiente sint illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reprehenderit maxime aperiam quisquam non animi eligendi eos, eaque est molestiae laborum blanditiis tempore veniam voluptatum magnam veritatis! Optio, soluta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea distinctio possimus reiciendis facilis. Neque saepe rerum placeat, veritatis distinctio quia, nihil maxime quibusdam nostrum earum voluptatibus veniam, voluptates ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel veniam quos incidunt at aspernatur corporis. Porro cupiditate soluta ipsum quam reprehenderit odit voluptates quibusdam maxime, facilis obcaecati. Architecto, at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, eaque, natus, dicta deleniti ipsum quis cumque neque necessitatibus consectetur aspernatur officiis vitae odit quasi numquam in perferendis quo assumenda tenetur.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed, rem itaque debitis perferendis, tenetur totam nam quo id recusandae magni, eligendi perspiciatis quaerat incidunt magnam alias repellendus et eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, unde sint. Ullam numquam aliquam laboriosam fuga quis, saepe atque. Provident a libero ratione voluptate quibusdam placeat expedita quasi atque illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos voluptate eius ducimus, quae voluptatem pariatur sapiente quaerat sint nemo, mollitia, velit consequatur laborum odit dolorem. Rerum sapiente sint illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reprehenderit maxime aperiam quisquam non animi eligendi eos, eaque est molestiae laborum blanditiis tempore veniam voluptatum magnam veritatis! Optio, soluta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea distinctio possimus reiciendis facilis. Neque saepe rerum placeat, veritatis distinctio quia, nihil maxime quibusdam nostrum earum voluptatibus veniam, voluptates ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel veniam quos incidunt at aspernatur corporis. Porro cupiditate soluta ipsum quam reprehenderit odit voluptates quibusdam maxime, facilis obcaecati. Architecto, at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, eaque, natus, dicta deleniti ipsum quis cumque neque necessitatibus consectetur aspernatur officiis vitae odit quasi numquam in perferendis quo assumenda tenetur.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed, rem itaque debitis perferendis, tenetur totam nam quo id recusandae magni, eligendi perspiciatis quaerat incidunt magnam alias repellendus et eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, unde sint. Ullam numquam aliquam laboriosam fuga quis, saepe atque. Provident a libero ratione voluptate quibusdam placeat expedita quasi atque illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos voluptate eius ducimus, quae voluptatem pariatur sapiente quaerat sint nemo, mollitia, velit consequatur laborum odit dolorem. Rerum sapiente sint illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reprehenderit maxime aperiam quisquam non animi eligendi eos, eaque est molestiae laborum blanditiis tempore veniam voluptatum magnam veritatis! Optio, soluta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea distinctio possimus reiciendis facilis. Neque saepe rerum placeat, veritatis distinctio quia, nihil maxime quibusdam nostrum earum voluptatibus veniam, voluptates ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel veniam quos incidunt at aspernatur corporis. Porro cupiditate soluta ipsum quam reprehenderit odit voluptates quibusdam maxime, facilis obcaecati. Architecto, at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, eaque, natus, dicta deleniti ipsum quis cumque neque necessitatibus consectetur aspernatur officiis vitae odit quasi numquam in perferendis quo assumenda tenetur.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed, rem itaque debitis perferendis, tenetur totam nam quo id recusandae magni, eligendi perspiciatis quaerat incidunt magnam alias repellendus et eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, unde sint. Ullam numquam aliquam laboriosam fuga quis, saepe atque. Provident a libero ratione voluptate quibusdam placeat expedita quasi atque illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos voluptate eius ducimus, quae voluptatem pariatur sapiente quaerat sint nemo, mollitia, velit consequatur laborum odit dolorem. Rerum sapiente sint illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reprehenderit maxime aperiam quisquam non animi eligendi eos, eaque est molestiae laborum blanditiis tempore veniam voluptatum magnam veritatis! Optio, soluta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ea distinctio possimus reiciendis facilis. Neque saepe rerum placeat, veritatis distinctio quia, nihil maxime quibusdam nostrum earum voluptatibus veniam, voluptates ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel veniam quos incidunt at aspernatur corporis. Porro cupiditate soluta ipsum quam reprehenderit odit voluptates quibusdam maxime, facilis obcaecati. Architecto, at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, eaque, natus, dicta deleniti ipsum quis cumque neque necessitatibus consectetur aspernatur officiis vitae odit quasi numquam in perferendis quo assumenda tenetur.</p>
 </body>
 </html>
