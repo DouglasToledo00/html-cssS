@@ -1,0 +1,45 @@
+@charset "UTF8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+ 
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+fieldset{
+    margin: auto;
+    background-color: #2A2B2E;
+    text-align: center;
+    height: 400px;
+}
+input.border{
+    border-radius:18px;
+    padding: 8px;
+    width: 250px;
+}
+label.conect{
+    font-size: small;
+    color: white;
+    
+}
+input.logar{
+    border-radius: 18px;
+    width: 250px;
+    padding: 8px;
+    background-color: #2DB656;
+    color: white;
+}
+p{
+    color: rgb(101, 99, 99);
+   font-size: small;
+   padding-top:8px;
+  
+}
